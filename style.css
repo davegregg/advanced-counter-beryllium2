@@ -1,0 +1,82 @@
+html {
+  /* These are CSS variables. See how I define them? See how I use them later? */
+  --primary-color: lightcoral;
+  --shadow-color: grey;
+  --light-color: rgb(255, 212, 212);
+  --dark-color: rgb(43, 23, 23);
+  --count-text-color: white;
+  
+  --count-box-size: 25rem;
+  --count-text-size: 4rem;
+  --blur-distance: 0.5rem;
+  --heading-size: 2.4rem;
+
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: var(--heading-size);
+  color: var(--dark-color);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 25rem;
+  height: 25rem;
+
+  background-color: var(--primary-color);
+  box-shadow: 10px 10px var(--shadow-color);
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.button-row:nth-child(2) {
+  border-top: 0.25rem solid var(--primary-color);
+  border-bottom: 0.25rem solid var(--primary-color);
+}
+
+button {
+  display: block;
+  margin: 0.1rem;
+  border: 0.1rem solid white;
+  border-radius: 0.1rem;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+#count {
+  font-size: var(--count-text-size);
+  color: var(--count-text-color);
+  text-shadow: 0px 0px var(--blur-distance) var(--count-text-color);
+}
