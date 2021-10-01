@@ -1,8 +1,8 @@
-# Advanced Counter: Object-Oriented Programming
+# Advanced Counter: OOP vs FP vs Imperative Programming
 
-The Advanced Counter object should have the following property and methods:
+The Advanced Counter should have the following:
 
-  + `count()`: a number which represents the current `count`, initial value `0`
+  + `count`: a number which represents the current `count`, initial value `0`
 
   + `render()`: when this function runs, the DOM will be updated to display the current state of the `count`
 
